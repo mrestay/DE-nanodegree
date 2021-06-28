@@ -81,7 +81,8 @@ Query to answer question 3:
 ```SQL
 SELECT song, firstName, LastName
 FROM songs
-WHERE song = 'All Hands Against His Own' ALLOW FILTERING
+WHERE song = 'All Hands Against His Own' 
+ALLOW FILTERING
 ```
 
 ## Author
