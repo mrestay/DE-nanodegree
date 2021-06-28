@@ -61,7 +61,7 @@ To answer this questions three tables were created in the database:
 Query to answer question 1:
 
 ```SQL
-SELECT *
+SELECT artist, song, length
 FROM sessions
 WHERE sessionId = 338
   AND itemInSession = 4
@@ -70,7 +70,7 @@ WHERE sessionId = 338
 Query to answer question 2:
 
 ```SQL
-SELECT *
+SELECT artist, song, firstName, lastName
 FROM user_sessions
 WHERE userId = 10
   and sessionId = 182
@@ -79,7 +79,7 @@ WHERE userId = 10
 Query to answer question 3:
 
 ```SQL
-SELECT song, firstName, LastName
+SELECT firstName, LastName
 FROM songs
 WHERE song = 'All Hands Against His Own' 
 ALLOW FILTERING
