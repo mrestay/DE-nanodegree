@@ -138,4 +138,6 @@ dmypy.json
 cython_debug/
 
 # Data directories
-1-data_modelling/Postgres/data
+/1-data_modelling/Postgres/data
+/1-data_modelling/cassandra/data/
+/1-data_modelling/cassandra/event_datafile_new.csv
