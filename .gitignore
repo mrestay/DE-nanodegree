@@ -141,3 +141,4 @@ cython_debug/
 /1-data_modelling/Postgres/data
 /1-data_modelling/cassandra/data/
 /1-data_modelling/cassandra/event_datafile_new.csv
+/2-data_warehouses/Redshift/dwh.cfg
