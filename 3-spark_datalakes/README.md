@@ -96,19 +96,19 @@ There are two JSON sources to retrieve the data from.
 
 ```yaml
 [ TEST ]
-  TEST=0
+TEST=0
 
-  [ AWS ]
-  AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
-  AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
-  DESTINATION_BUCKET=s3a://<your-bucket>/
-  ORIGIN_BUCKET=s3a://udacity-dend/
+[ AWS ]
+AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
+AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
+DESTINATION_BUCKET=s3a://<your-bucket>/
+ORIGIN_BUCKET=s3a://udacity-dend/
 
-  [ EMR ]
-  SPARK_HOME=/usr/lib/spark
-  PYSPARK_PYTHON=/usr/lib/spark/python
-  PY4J=/usr/lib/spark/python/lib/py4j-0.10.7-src.zip
-  SPARK_JARS=org.apache.hadoop:hadoop-aws:3.2.0
+[ EMR ]
+SPARK_HOME=/usr/lib/spark
+PYSPARK_PYTHON=/usr/lib/spark/python
+PY4J=/usr/lib/spark/python/lib/py4j-0.10.7-src.zip
+SPARK_JARS=org.apache.hadoop:hadoop-aws:3.2.0
 ```
 
 **Note** that the `TESTING` variable is used to read and write local sample of the data in `<project-root>/data` if set
