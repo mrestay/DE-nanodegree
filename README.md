@@ -11,9 +11,11 @@ Repo containing the project's code of Udacity's Data Engineering Nanodegree.
 3. [Data Warehousing with AWS Redshift](2-data_warehouses/Redshift): Create a cloud data warehouse in AWS Redshift and
    an ETL pipeline for a music streaming app. Apply the Star schema, define the Fact and Dimension tables and insert
    data into the staging and production tables.
-3. [Data Lakes with Spark](3-spark_datalakes): Create a cloud data lake in AWS S# and an ETL pipeline with Spark for a
+4. [Data Lakes with Spark](3-spark_datalakes): Create a cloud data lake in AWS S3 and an ETL pipeline with Spark for a
    music streaming app. Apply the Star schema, define the Fact and Dimension tables and partitioned data into the data
    lake.
+5. [Data pipelines with Airflow](4-airflow_pipelines): Create a robust data pipeline with Apache Airflow loading data
+   from an S3 data lake to a Redshift warehouse in a star schema.
 
 ## Author
 
