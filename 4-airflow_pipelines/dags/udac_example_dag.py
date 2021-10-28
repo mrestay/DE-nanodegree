@@ -8,22 +8,22 @@ from helpers import SqlQueries
 default_args = {
     "owner": "sparkify",
     "depends_on_past": False,
-    "start_date": datetime(2019, 1, 12),
-    "end_date": datetime(2019, 1, 13),
-    "retries": 3,
-    "retry_delay": timedelta(minutes=5),
+    "start_date": datetime(2021, 10, 21),
+    "end_date": datetime(2021, 10, 22),
+    "retries": 1,
+    "retry_delay": timedelta(minutes=1),
     "catchup": False,
     "email_on_retry": False,
     "s3_json_path": "s3://udacity-dend/log_json_path.json",
     "s3_bucket": "udacity-dend",
-    "s3_region": "us-west-2",
+    "s3_region": "us-east-1",
 }
 
 with DAG(
     "build_dwh",
     default_args=default_args,
     description="Load and transform data in Redshift with Airflow",
-    schedule_interval="@hourly",
+    schedule_interval="@daily",
 ) as dag:
     start_operator = DummyOperator(task_id="Begin_execution")
 
@@ -62,7 +62,7 @@ with DAG(
         task_id="Stage_songs",
         table="staging_songs",
         s3_bucket=default_args["s3_bucket"],
-        s3_key="song_data",
+        s3_key="song_data/A/A/A",
         s3_region=default_args["s3_region"],
         s3_json_path="auto",
     )
