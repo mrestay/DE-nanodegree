@@ -22,7 +22,7 @@ class LoadDimensionOperator(BaseOperator):
         self.log.debug("Connecting to Redshift cluster")
         redshift = PostgresHook()
 
-        if self.truncate:
+        if self.truncate_table:
             redshift.run(f"TRUNCATE {self.table}")
 
         self.log.info(f"Populating dimension table: {self.table}")
