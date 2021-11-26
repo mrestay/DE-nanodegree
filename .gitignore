@@ -146,3 +146,4 @@ cython_debug/
 /3-spark_datalakes/dl.cfg
 /5-capstone/src/spark.cfg
 /5-capstone/data/
+/5-capstone/airflow/logs/
