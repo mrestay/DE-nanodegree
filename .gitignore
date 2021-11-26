@@ -144,3 +144,5 @@ cython_debug/
 /2-data_warehouses/Redshift/dwh.cfg
 /3-spark_datalakes/data/
 /3-spark_datalakes/dl.cfg
+/5-capstone/src/spark.cfg
+/5-capstone/data/
