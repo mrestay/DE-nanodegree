@@ -16,6 +16,8 @@ Repo containing the project's code of Udacity's Data Engineering Nanodegree.
    lake.
 5. [Data pipelines with Airflow](4-airflow_pipelines): Create a robust data pipeline with Apache Airflow loading data
    from an S3 data lake to a Redshift warehouse in a star schema.
+6. [Capstone data engineering project](5-capstone) End-to-end ETL pipeline with Apache Airflow, Apache Spark and AWS
+   Redshift.
 
 ## Author
 
