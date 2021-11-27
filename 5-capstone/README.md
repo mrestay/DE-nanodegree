@@ -47,6 +47,8 @@ found in the `EDA` notebook.
 
 ## Data Schema
 
+![ERD](images/capstone-ERD.png "Entity relationship diagram.")
+
 ### Fact Table
 
 ### Fact Table
@@ -56,12 +58,10 @@ found in the `EDA` notebook.
 - immigration_id: The unique ID for the respondent's immigration record. Primary key for this table. Foreign key
   for `visitors`, `visas` and `dates` tables.
 - flight_number: The flight number of the respondent. Foreign key for `flights` table.
-- port_code: The US port of arrival code of the respondent. Foreign key for `general_demographics`
-  , `race_demographics`, `airports` and `port_codes` tables
+- port_code: The US port of arrival code of the respondent. Foreign key for `general_demographics`.
+  , `race_demographics`, `airports` and `port_codes` tables.
 
 ### Dimension Tables
-
-![ERD](images/capstone-ERD.png "Entity relationship diagram.")
 
 `flights`
 
@@ -83,11 +83,11 @@ found in the `EDA` notebook.
 - arrival_date: Respondent's arrival date to the US.
 - arrival_year: Year of arrival.
 - arrival_month: Month of arrival.
-- arrival_day: day of arrival.
+- arrival_day: Day of arrival.
 - departure_date: Respondents departure_date from the US.
-- departure_year: Year of departure
-- departure_month: month of departure
-- departure_day: Day of departure
+- departure_year: Year of departure.
+- departure_month: Month of departure.
+- departure_day: Day of departure.
 
 `visas`
 
@@ -119,8 +119,8 @@ found in the `EDA` notebook.
 - native_count: Number of native americans.
 - asian_count: Number of asians.
 - black_count: Number of blacks.
-- hispanic_count:  number of hispanics.
-- white_count: number of whites.
+- hispanic_count: Number of hispanics.
+- white_count: Number of whites.
 
 `airports`
 
