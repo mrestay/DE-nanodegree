@@ -381,7 +381,7 @@ analytics workloads with the data. The first scenario is an external limiting fa
 schedule in which the pipeline should run, i.e. it makes no sense running the pipeline with a higher frequency than the
 data update form the source. The second scenario is an internal design decision that can be modified according to the
 data needs, thus if analyses are to be run daily or weekly would mean that the data pipeline schedule should easily
-accommodate this design decisions.
+accommodate these design decisions.
 
 ## Addressing Other Scenarios
 
