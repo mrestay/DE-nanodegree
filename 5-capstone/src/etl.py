@@ -129,10 +129,12 @@ def process_immigration_data(spark: SparkSession, raw_data_path: str = None, des
     logging.info("Creating immigration fact table")
     immigration_fact_cols = ["immigration_id", "flight_number", "port_code"]
     immigration_fact_df = immigration_df.select(immigration_fact_cols).dropDuplicates()
-    immigration_fact_df = immigration_df.withColumn("immigration_id", immigration_fact_df.immigration_id.cast("int"))
+    immigration_fact_df = immigration_fact_df.withColumn(
+        "immigration_id", immigration_fact_df.immigration_id.cast("int")
+    )
     immigration_fact_df.write.mode("overwrite").parquet(os.path.join(destination_path, "immigration_fact"))
 
-    # Create fligths dimension table
+    # Create flights dimension table
     logging.info("Creating flights dimension table")
     flights_dim_cols = ["flight_number", "airline"]
     flights_dim_df = immigration_df.select(flights_dim_cols).dropDuplicates().where(F.col("flight_number").isNotNull())
