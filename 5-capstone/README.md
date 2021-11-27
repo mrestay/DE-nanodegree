@@ -258,11 +258,11 @@ The following is the diagram of the DAG to be run by the data pipeline
    ```config
    [TEST]
    TEST=<0 or 1 for local testing>
-
-    [AWS]
-    AWS_ACCESS_KEY_ID=<aws key id>
-    AWS_SECRET_ACCESS_KEY=<aws secret key>
-    DESTINATION_BUCKET=<bucket name>
+   
+   [AWS]
+   AWS_ACCESS_KEY_ID=<aws key id>
+   AWS_SECRET_ACCESS_KEY=<aws secret key>
+   DESTINATION_BUCKET=<bucket name>
    ```
 
 3. Create an AWS Redshift instance.
